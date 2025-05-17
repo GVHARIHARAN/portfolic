@@ -85,18 +85,18 @@
   }
 
   .welp {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .welh2 {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 15px;
     width: 10%;
     letter-spacing: normal;
   }
 
   .seecv {
-    font-size: 8px;
+    font-size: 12px;
     padding: 1%;
   }
 }

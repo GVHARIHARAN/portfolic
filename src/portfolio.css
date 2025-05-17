@@ -59,7 +59,7 @@
 .welcom1 {
   height: 600px;
   width: 100%;
-  background-image: url(folioc.jpg);
+  /* background-image: url(folioc.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
 }

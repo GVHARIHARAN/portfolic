@@ -1,0 +1,112 @@
+/* /* .contact-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  
+}
+  
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #636b2f;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form button {
+    width: 30%;
+    padding: 12px;
+    color:#636b2f;
+    border: #636b2f solid 1px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #636b2f;
+    color: white;
+  }
+   */
+
+/* .skill-percent {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+   */
+  
+   body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills {
+    border: #82a448 solid 2px;
+  }
+  
+  /* .edc-click, .abo-click {
+    border-bottom: #82a448 solid 2px;
+    padding: 3px;
+    width: 100%;
+  } */
+  
+  .hr-green {
+    border-color: #82a448;
+  }
+  
+  /* Loader animation */
+  .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: repeating-conic-gradient(#000 0 90deg, #82a448 0 180deg);
+    animation: l21 1s infinite linear;
+  }
+  
+  @keyframes l21 {
+    100% {
+      transform: rotate(.5turn);
+    }
+  }
+  
+  .hr-green {
+    border: none;
+    height: 2px;
+    background-color: #82a448;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .abo-click, .edc-click {
+    width: 100%;
+    border-bottom: 2px solid #82a448;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .imgf{
+    background-color: #82a448;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+  }      

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#pnavbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3),
+                -4px -4px 10px white;
+    font-weight: bolder;
+    z-index: 100;
+    padding: .40px 40px;
+    color: #98bf64;    
+
+
+}
+#pnavbar h2{
+    font-size: 30px;
+    color: #98bf64;
+}
+
+.form-group input {
+    color: white;
+
+    padding: 10px;
+    width: 200px;
+    background-color: #98bf64 !important; 
+    box-shadow: none !important;
+    border-radius: 5px;
+    border: none;
+    border-bottom:solid 2px white;
+    outline: none;
+    margin-left: 20px;
+}
+.form-group input::placeholder{
+    color: white;
+    
+}
+.form-group input::selection{
+    background-color: #98bf64;
+}
+
+#btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+
+
+.boxlo{
+    color:white;   
+    background-color:#98bf64 !important;
+    
+    border-radius: 30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+   overflow: hidden;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 350px;
+    width: 10%;
+   
+    padding: 20px;
+}
+/* .boxlo:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+                inset -4px -4px 10px white;
+                transition: .2s;
+
+} */
+#login {
+   z-index: 1;
+    opacity: 0.9;
+    background-image: url('watchbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+
+    height: 120vh;    
+}

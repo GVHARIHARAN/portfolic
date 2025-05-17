@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Lexend Giga", serif;
+    background: white;
+
+}
+
+#pnavbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-weight: bolder;
+    z-index: 100;
+    padding: .40px 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+
+
+}
+
+.navberlink {
+    font-weight: bold;
+}
+
+
+
+
+/* home */
+
+
+.h11 {
+    padding: 100px;
+    letter-spacing: 4px;
+
+
+}
+
+.b {
+    margin-left: 100px;
+}
+
+
+
+.slide1 {
+    background: url(silde1.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.slide2 {
+    background: url(silde2.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+
+}
+
+.slide3 {
+    background: url(silde3.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: 300px;
+        /* Adjust height for mobile */
+    }
+
+    .b {
+        margin-left: 20px;
+        /* Adjust margin for mobile */
+    }
+
+    .h11 {
+        padding: 20px;
+        /* Adjust padding for mobile */
+        margin-bottom: 30px;
+        /* Adjust margin for mobile */
+    }
+}
+
+.dr {
+
+    background: url(dressimg.jpg) no-repeat;
+    height: 380px;
+    width: 380px;
+    background-size: cover;
+}
+
+.me {
+
+    background: url(menimg.png) no-repeat;
+    height: 380px;
+    width: 380px;
+    background-size: cover;
+}
+
+.wom {
+
+    background: url(womening.png) no-repeat;
+    height: 380px;
+    width: 380px;
+    background-size: cover;
+}
+
+.men1 {
+    display: block;
+    font-size: x-large;
+    margin-top: 340px;
+
+    overflow: hidden;
+    color: black;
+}
+
+.wom:hover {
+    transform: scale(1.1);
+
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.dr:hover {
+    transform: scale(1.1);
+
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.me:hover {
+    transform: scale(1.1);
+
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .dr,
+    .me,
+    .wom {
+        margin-top: 20px;
+        height: 300px;
+        /* Adjust height for mobile */
+        margin-bottom: 20px;
+        width: 300px;
+        /* Adjust width for mobile */
+    }
+
+    .men1 {
+        color: white;
+        font-size: medium;
+        /* Adjust font size for mobile */
+        margin-top: 260px;
+        /* Adjust margin-top for mobile */
+        margin-left: 20px;
+        /* Adjust margin-left for mobile */
+    }
+}
+
+.tr1,
+.pr1 {
+    color: black;
+}
+
+/* cart */
+/* .cartb{
+    display: none;
+}
+
+.imgg:hover+.cartb{
+    display: block;
+} */
+
+.boxx {
+    padding: 10px;
+    width: 300px;
+    height: 450px;
+    /* background: #e5e5e5 !important; */
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+        inset 4px 4px 10px white;
+    border-radius: 40px !important;
+    overflow: hidden;
+    justify-content: center;
+    margin: 20px 30px;
+
+    transition: .2s;
+}
+
+.boxx:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+        inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+
+/* shop   */
+@media (max-width:768px) {
+    #sh2 {
+        font-size: 300;
+    }
+
+    #shp {
+        font-size: small;
+    }
+
+    .shb {
+        width: 180px;
+    }
+}
+
+.shop2 {
+    justify-content: center;
+    align-self: center;
+}
+
+.shopnew {
+    /* opacity: 0.8; */
+    color: white;
+    background: url(shopnew1c.jpg) no-repeat;
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+}
+
+.snc {
+    text-align: center;
+    height: 50px;
+}
+
+
+.sncb {
+    width: 300px;
+    height: 50px;
+}
+
+@media (max-width:768px) {
+    .shopnew {
+        height: 220px;
+        /* Adjust height for mobile */
+        width: 100%;
+        /* Adjust width for mobile */
+    }
+
+    .sncp {
+        font-size: x-small;
+    }
+
+    .snch1 {
+        font-size: x-large;
+
+    }
+
+    .sncb {
+        font-size: xx-small;
+        height: 30px;
+        width: 170px;
+    }
+}
+
+/* sildee */
+
+.insta {
+    color: white;
+    position: absolute;
+    bottom: 10;
+    margin-left: 80px;
+    margin-top: 120px;
+    display: none;
+    z-index: 100;
+
+}
+
+@keyframes sildes {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+
+
+
+/* Default styles for larger screens (desktop and tablets) */
+.wrapper {
+    background-color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 30px 0;
+    position: relative;
+}
+
+.silde {
+    display: inline-block;
+    animation: 30s sildes infinite linear;
+}
+
+.wrapper::before,
+.wrapper::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 99;
+}
+
+.wrapper::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.wrapper::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.wrapper:hover .silde {
+    animation-play-state: paused;
+}
+
+.silde a {
+    display: none;
+}
+
+.silde img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.silde img {
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px 10px;
+    }
+
+    .silde img {
+        height: 200px;
+        width: 150px;
+        margin: 5px;
+    }
+
+    .silde {
+        display: inline-block;
+        /* Change from inline-table to inline-block for better alignment */
+    }
+
+    /* Optional: Reduce the sliding animation speed for smaller screens */
+    .silde {
+        animation-duration: 20s;
+    }
+}
+
+/* Extra Small Screens (Mobile phones in portrait mode) */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px 5px;
+    }
+
+
+    .silde img {
+        height: 150px;
+        width: 120px;
+        margin: 5px;
+    }
+
+    .wrapper::before,
+    .wrapper::after {
+        width: 150px;
+        /* Reduce the size of the fade-out effect */
+    }
+}
+
+/* Media query for mobile devices */
+
+
+/* footer */
+.footer {
+
+    color: black;
+    padding: 20px;
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+
+    width: 30%;
+    text-align: left;
+}
+
+.section h4 {
+    margin-bottom: 10px;
+}
+
+.section h5 {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section a {
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+section p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+span a {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section h4,
+    .section h5 {
+        margin-bottom: 5px;
+    }
+
+    /* .section a {
+        display: block;
+        margin-bottom: 5px;
+    } */
+    span {
+        justify-self: center;
+    }
+
+    span a {
+
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .fss {
+
+        font-size: small;
+    }
+
+}
+
+
+
+.amzn {
+    height: 40px;
+    background: url(cards.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+}
+
+@media (max-width:480px) {
+    .amzn {
+        height: 25px;
+        width: 300px;
+    }
+}
+
+@media (max-width:768px){
+    .amzn{
+        justify-content: end;
+        height: 30px;
+        width: 350px;
+    }
+}

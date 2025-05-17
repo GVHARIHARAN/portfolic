@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 100px 0 0 200px ;
+        width: 70%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #imgg {
+        width: 10%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px soild rgba(255, 255, 255, 0.6);
+        transition: all ease-in-out 0.ms;
+    }
+    #imgg:hover{
+        width: 25%;
+    }
+</style>
+
+<body>
+
+    
+    <div class="container">
+        <img src="back10.jpg" alt="" id="imgg"  class="img-fluid">
+        <img src="back9.jpg" alt="" id="imgg"  class="img-fluid">
+        <img src="back8.jpg" alt="" id="imgg" class="img-fluid">
+        <img src="back12.jpg" alt="" id="imgg" class="img-fluid">
+        <img src="back11.jpg" alt="" id="imgg" class="img-fluid">
+
+    </div>
+
+
+    <h1 id="h1">name</h1>
+
+    <button id="btn" onclick="bt(event)">delivery</button>
+    <script>
+        var h = document.getElementById("h1")
+        var b = document.getElementsById("btn")
+        function bt(event) {
+            h.textContent = event.target.textContent;
+        }
+
+    </script>
+</body>
+
+</html>

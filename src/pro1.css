@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Lexend Giga", serif;
+    background: #f5f5f5;
+
+}
+
+#pnavbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-weight: bolder;
+    z-index: 100;
+    padding: .40px 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+
+
+}
+
+.navberlink {
+    font-weight: bold;
+}
+
+/* shop */
+
+.shopw{
+    color:black;
+    background: url("shopwat1.jpg") no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.shopwa{
+    display: flex;
+    justify-content: center;
+   
+   align-content: center;
+   
+
+
+}
+.shopwa a{
+    color: white;
+    text-decoration: none;
+}
+.shopwa a:hover{
+    text-decoration: underline;
+}
+
+.boxx1 {
+    padding: 10px;
+    width: 300px;
+    height: 500px;
+    background: whitesmoke !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+        inset 4px 4px 10px white;
+    border-radius: 40px !important;
+    overflow: hidden;
+    justify-content: center;
+    margin: 20px 30px;
+
+    transition: .2s;
+}
+
+.boxx1:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+        inset -4px -4px 10px white;
+    transition: .2s;
+}
+.footer {
+
+    color: black;
+    padding: 20px;
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+
+    width: 30%;
+    text-align: left;
+}
+
+.section h4 {
+    margin-bottom: 10px;
+}
+
+.section h5 {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section a {
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+section p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+span a {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section h4,
+    .section h5 {
+        margin-bottom: 5px;
+    }
+
+    /* .section a {
+        display: block;
+        margin-bottom: 5px;
+    } */
+    span {
+        justify-self: center;
+    }
+
+    span a {
+
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    
+.shopw{
+    color:black;
+    background: url("shopwat1.jpg") no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+}
+@media(max-width:480px){
+    
+.shopw{
+    color:black;
+    background: url("shopwat1.jpg") no-repeat;
+    background-size: cover;
+    height: 135px;
+    width: 100%;
+}
+
+}
+
+
+
+.amzn {
+    height: 40px;
+    background: url(cards.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+}
+
+@media (max-width:480px) {
+    .amzn {
+        height: 25px;
+        width: 300px;
+    }
+}
+
+@media (max-width:768px){
+    .amzn{
+        justify-content: end;
+        height: 30px;
+        width: 350px;
+    }
+}

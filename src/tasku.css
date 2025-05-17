@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+  background: black;
+}
+
+.li {
+  color: black;
+  margin-left: 10px;
+  display: none;
+  font-weight: bold;
+}
+
+.span:hover+.li {
+  display: block;
+}
+
+/* home */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), url(back12.jpg);
+  background-size: cover;
+}
+
+#home h1 {
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 0px 1px 0px #e5e5e5,
+    0px 2px 0px #e5e5e5,
+    0px 3px 0px #e5e5e5,
+    0px 4px 0px #e5e5e5,
+    0px 5px 0px #e5e5e5,
+    0px 6px 0px #e5e5e5,
+    0px 7px 0px#e5e5e5;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#home p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#home .ema {
+  display: inline;
+  box-shadow: none;
+  height: 45px;
+  width: 40%;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid white 2px;
+  color: #e5e5e5;
+}
+
+#home .ema::placeholder{
+  color: #e5e5e5;
+}
+
+#home .btn {
+  padding: 10px;
+}
+
+/* about */
+#aboutt {
+  padding: 50px;
+}
+
+#aboutt h2 {
+  font-size: 50px;
+}
+
+#aboutt p {
+  font-size: 15px;
+}
+
+/* food items */
+#food .box {
+  padding: 10px;
+  width: 250px;
+  height: 350px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+    inset 4px 4px 10px white;
+  border-radius: 20px !important;
+  overflow: hidden;
+  justify-content: center;
+  margin: 20px 30px;
+  font-family: "Poppins", sans-serif;
+  transition: .2s;
+}
+
+#food .box:hover{
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+              inset -4px -4px 10px white;
+  transition: .2s;
+}
+
+#food h2{
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
+.contact{
+  padding: 20px;
+}
+
+footer{
+  width: auto;
+  height: 30px;
+  background: rgba(0, 0, 0, .8);
+  text-align: center;
+  color: white;
+  padding: 3px;
+}
+
+/* #car{
+  height: 100%;
+  width: 20%;
+} */
+
+/* #reviews{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding: 20px;
+ 
+} */
+#reviews h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+#reviews p{
+  font-size: 15px;
+} 
+#reviews .box{
+  margin-top: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 280px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+    inset 4px 4px 10px white;
+  border-radius: 20px !important;
+  overflow: hidden;
+  justify-content: center;
+ 
+  font-family: "Poppins", sans-serif;
+  transition: .2s;
+}
+
+
+

@@ -1,0 +1,541 @@
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNkHJemMSGk00WnIQNWZHtevZ-vMH_JUnmZw&s">
+				<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+			<style>
+				body{
+					padding:0px;
+					margin:0px;
+					background:azure;
+				}
+				.navbar{
+					background:burlywood;
+					color:darkcyan;
+					font-size:1.2em;
+					font-weight:bold;
+					cursor:pointer;
+					border:solid burlywood;
+				}
+				.icon{
+						position:relative;
+						top:17px;
+						font-size:1.4em;
+						font-weight:bold;	
+						color:cornflowerblue;
+						font-family:papyrus;
+						background:white;
+						padding:10px;
+						border-radius:10px;
+						
+				}
+				.icon:hover{
+					background:linen;
+					box-shadow:4px 4px 1px;
+				}
+				.navbar{
+					background:burlywood;
+					color:darkcyan;
+					font-size:1.2em;
+					font-weight:bold;
+					cursor:pointer;
+					border:solid burlywood;
+				}
+				.card{
+					position:absolute;
+					top:20px;
+					right:20px;
+					font-size:1.9em;
+					display:flex;
+					text-decoration:none;
+				}
+				
+				.car{
+					position:absolute;
+					top:10px;
+					right:15px;
+					color:red;
+					font-family:arial;
+					font-size:1em;
+					font-weight:bold;
+					background:red;
+					color:white;
+					padding:3px;
+					border-radius:50%;
+					
+				}
+				.mens{
+					background:white;
+					max-width:100%;
+					padding:8px;
+					position:relative;
+					bottom:17px;
+				}
+				.menShirts{
+					font-size:2em;
+					text-align:center;
+					color:#006622;
+					font-weight:bold;
+				}
+				.images{
+					background:white;
+					width:300px;
+					height:500px;
+					padding:21px;
+					border-radius:15px;
+					border:solid white;
+					box-shadow:5px 5px 15px hsla(0,0%,0%,0.3);
+					gap:170px;
+				}
+				
+					
+				.Shirts{
+					position:relative;
+					top:5px;
+					text-align:center;
+					font-size:1.4em;
+					color:#b34700;
+					font-weight:bold;
+				}
+				.Shirt{
+					color:#00802b;
+					position:relative;
+					top:1px;
+					text-align:center;
+				}
+				.rupee{
+					
+					text-align:center;
+					font-size:1.2em;
+					color:#cccc00;
+					font-size:bold;
+					text-transform:uppercase;
+					
+				}
+				.button{
+					font-size:1em;
+					width:200px;
+					position:relative;
+					top:3px;
+					border:solid #006080;
+					background:#006080;
+					color:white;
+					padding-right:18px;
+				}	
+				.button:hover{
+					color:White;
+					background:darkslategray;
+					border:solid darkslategray;					
+				}
+				.button:active{
+					color:White;
+					background:lightsalmon;
+					border:solid lightsalmon;
+				}
+				.image{
+					border-radius:10px;
+			
+				}
+				.image:hover{
+					box-shadow:5px 5px 25px;
+					transform:rotate(360deg);
+					transition:2s;
+				}
+				
+				hr{
+					color:red;
+					
+				}
+				.footer{
+					background:black;
+					color:White;
+					padding:10px;
+				}
+				.address{
+					display:flex;
+					justify-content:space-between;
+				}
+				.fa{
+					padding:10px;
+					margin-left:10px;
+					border-radius:50%;
+				}
+				.fa:hover:
+					{
+						opacity:0.7;
+							
+							
+							
+					}
+						.fa-facebook{
+							background:#34e8ed;
+							color:white;
+
+						}		
+					.fa-instagram{
+							background:#ed34ae;
+							color:white;
+					
+					}
+					.fa-google{
+							background:#dd4b39;
+							color:white;
+					
+					}
+					.fa-twitter{
+						background:#55ACEE;
+						color:white;
+					
+					}
+					.fa-youtube
+					{
+						background:#bb0000;
+						color:white;
+					}
+					.fa-snapchat-ghost
+					{
+						background:#fffc00;
+						color:white;
+						text-shadow:-1px 0 black, 0 1px black,
+						1px 0 black, 0 -1px black;
+					}
+					.cartTable{
+						width:400px;
+						
+						background-color:Black;
+						color:White;
+						position:fixed;
+						top:0;
+						right:0;
+						bottom:0;
+						insert:0 0 0 auto;
+						display:grid;
+						grid-template-rowa:70px 1fr 70px;
+					}
+					
+			</style>
+			
+	</head>
+	
+		<body>
+		
+			<nav class="navbar navbar-inverse  navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand"><span class="icon"><u>WearPro</u></span></div>
+					</div>
+					 
+					<div class="collapse navbar-collapse" id="mynavbar">
+							<ul class="nav navbar-nav navbar-right">
+									
+									<li><a href="page1.html"><span class="navbar">Home</span></a></li>
+									<li><a href="page2.html"><span class="navbar">About Us</span></a></li>
+									<li><a href="page3.html"><span class="navbar">Men</span></a></li>
+									<li><a href="page4.html"><span class="navbar">Women</span></a></li>
+									<li><a href="page5.html"><span class="navbar">Contact</span></a></li>
+									
+								
+							</ul>	
+					</div>	
+				</div>
+			</nav>	
+			<div class="mens">
+				<h1 class="menShirts">Men's Trending Shirts</h1>
+				<ul>
+				<li class="card"><i class="ri-shopping-cart-2-line"></i></li><span class="car">0</span>
+				</ul>
+			</div>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-green-textured-oversized-shirt-646394-1732021577-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Beige Textured Oversized Shirt</p>
+
+						<p class="rupee">$100 <s>$290</s> 50% off </p>
+						<button class="button" onclick="change()"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-rust-orange-checked-oversized-shirt-646373-1734610461-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Rust Orange Checked Oversized Shirt</p>
+						<p class="rupee">$170 <s>$399</s> 40% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-blue-striped-oversized-shirt-597301-1718599038-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's Blue Striped Oversized Shirt</p>
+						<p class="rupee">$300 <s>$499</s> 35% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-olive-green-textured-shirt-646377-1730873077-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's Olive Green Textured Shirt</p>
+						<p class="rupee">$300 <s>$699</s> 56% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-brown-black-run-checked-oversized-shirt-604480-1721135180-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt"> Brown & Black Run Checked</p>
+
+						<p class="rupee">$150 <s>$400</s> 60% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-green-textured-oversized-shirt-646380-1732106425-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Men's Green Textured Oversized Shirt</p>
+						<p class="rupee">$700 <s>$999</s> 20% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-white-textured-shirt-646369-1730892341-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's White Textured Shirt</p>
+						<p class="rupee">$590 <s>$899</s> 37% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-black-striped-oversized-shirt-646397-1731311193-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Beige & Brown Textured Oversize</p>
+						<p class="rupee">$1000 <s>$2990</s> 58% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-white-all-over-printed-oversized-shirt-624395-1716786195-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Men's White All Over Printed Oversized</p>
+
+						<p class="rupee">$650 <s>$990</s> 31% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-white-textured-shirt-646393-1730873134-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Men's White Textured Shirt</p>
+						<p class="rupee">$1300 <s>$2999</s> 60% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-orange-textured-oversized-shirt-634256-1721214500-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's Orange Textured Oversized Shirt</p>
+						<p class="rupee">$490 <s>$699</s> 27% off </p>
+					
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-rust-orange-striped-oversized-shirt-646391-1730892436-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt"> Black & Off White Striped Oversized</p>
+						<p class="rupee">$2000 <s>$3990</s> 58% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-white-vengeance-typography-oversized-t-shirt-519142-1734685939-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Men's White Vengeance Typography</p>
+
+						<p class="rupee">$450 <s>$990</s> 51% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-black-fly-me-to-the-moon-graphic-printed-oversized-t-shirt-505572-1734616177-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="Shirt">Men's Black Fly Me To The Moon </p>
+						<p class="rupee">$300 <s>$999</s> 60% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-green-stay-weird-typography-oversized-t-shirt-552822-1737106429-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's Green Stay Weird Typography</p>
+						<p class="rupee">$400 <s>$699</s> 27% off </p>
+					
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						</center>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<center>
+						<div class="images">
+						<img src="https://images.bewakoof.com/t640/men-s-black-oversized-t-shirt-439421-1734427687-1.jpg" height="300px" width="220px" class="image">
+						<p class="shirts">Wearpro</p>
+						<p class="shirt">Men's Black Oversized T-shirt</p>
+						<p class="rupee">$1000 <s>$2990</s> 58% off </p>
+						<button class="button"><i class="fa fa-cart-plus"></i>Add to Card</button>
+						</div>
+						<center>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			
+			
+			
+			<div class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<center>
+							<h2>Wearpro</h2>
+							<h3>Men's Clothing</h3>
+							<p>Full hand size</p>
+							<p>Off hand size</p>
+							<p>T-shirt</p>
+							</center>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<br>
+							<br>
+							<center>
+							<h3>Women's Clothing</h3>
+							<p>T-shirts</p>
+							<p>Sarees</p>
+							<p>Tops</p>
+							</center>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<br>
+						<br>
+						<center>
+							<h3>Size</h3>
+							<p>XL</p>
+							<p>L</p>
+							<p>M</p>
+							</center>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="address">
+
+				<p>Wearpro Clothing Shop Madurai-625009</p>
+				<p>wearpro@gmail.com</p>
+				</div>
+				<center>
+					        <a href="#" class="fa fa-facebook"></a>			
+							<a href="#" class="fa fa-instagram"></a>			
+							<a href="#" class="fa fa-google"></a>			
+							<a href="#" class="fa fa-twitter"></a>	
+							<a href="#" class="fa fa-youtube"></a>	
+							<a href="#" class="fa fa-snapchat-ghost"></a>
+				</center>
+				
+			</div>
+				
+			</body>
+			
+						
+</html>

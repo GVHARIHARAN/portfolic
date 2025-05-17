@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    
+</head>
+<style>
+    body{
+        background-color: #f5f;
+    }
+    .envelope .envelope_card{
+        position:absolute;
+        bottom: 0;
+        display: block;
+        width: 250px;
+        height: 200px;
+        margin:  0 250px;
+        background-color: #f5f6d6;
+
+    }
+    .envelope .envelope_card .open{
+        -webkit-animation: cardJump .5s ease .5s forwards;
+        -o-animation: cardJump .5s ease .5s forwards;
+        animation: cardJump .5s ease .5s forwards;
+        z-index: 1;
+
+    }
+</style>
+<body>
+    <div class="envelope">
+        <div class="envelope_card">
+            <div class="open">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Envelope</title>
+    <style>
+        body {
+            background-color: #f5f;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .envelope {
+            position: relative;
+            height: 300px;
+            width: 500px;
+        }
+
+        .envelope::before {
+            content: '';
+            position: absolute;
+            bottom: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            border-bottom: 50px solid #d4d5a8;
+        }
+
+        .envelope_card {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            height: 200px;
+            background-color: #f5f6d6;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+        }
+
+        .envelope_card.open {
+            animation: cardJump 0.5s ease 0.5s forwards;
+        }
+
+        @keyframes cardJump {
+            from {
+                transform: translateX(-50%) translateY(0);
+            }
+            to {
+                transform: translateX(-50%) translateY(-150px);
+            }
+        }
+    </style>
+    <script>
+        document.querySelector('.envelope_card').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</head>
+<body>
+    <div class="envelope">
+        <div class="envelope_card open">
+            <h1 class="text-center">Hpy <br> valentine <br> day</h1>
+        </div>
+    </div>
+</body>
+</html>

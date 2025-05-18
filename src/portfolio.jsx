@@ -148,7 +148,7 @@ const portfolio = () => {
             </p>
             <a
               href="../src/Hariharan GV.pdf"
-              download
+              download=''
               className="download-btn seecv"
             >
               Download CV{" "}

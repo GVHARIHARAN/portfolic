@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@400;600&display=swap');
 
 
 * {
   /* color: #82a448; */
   padding: 0%;
   margin: 0%;
-  font-family: 'Roboto', sans-serif;
-  /* font-weight: 400;
-  font-style: normal; */
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   /* color: #fdfbd4; */
+}
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
 }
 
 #navb {
@@ -184,7 +192,7 @@
   .copyright {
     /* padding: 8px; */
     /* margin: 5px; */
-    font-size: small;
+    font-size: 10px;
   }
 
 }
@@ -198,7 +206,7 @@
   }
 
   .copyright {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .label {
@@ -384,14 +392,14 @@
 
   .map {
     margin-top: 10px;
-    height: 200px;
-    width: 280px;
+    height: 230px;
+    width: 330px;
   }
 
   .contact-form input,
   .contact-form textarea {
 
-    width:330px;
+    width:350px;
     padding: 8px;
     margin-bottom: 8px;
 
@@ -404,7 +412,7 @@
   }
 
   .contact-text {
-    font-size: 10px;
+    font-size: 17px;
   }
 }
 

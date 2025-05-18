@@ -27,6 +27,9 @@ import { MdOutlinePhoneIphone } from "react-icons/md";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import { PiMapPinSimpleArea } from "react-icons/pi";
 import Preloader from '../src/preloader';
+import Resume from'../src/hariharan.pdf';
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom"; 
 
 const portfolio = () => {
 
@@ -146,11 +149,7 @@ const portfolio = () => {
               responive,accessible,and <br /> interactive user interfaces using
               modern tools like HTML,CSS,JavaScript and React.
             </p>
-            <a
-              href="../src/Hariharan GV.pdf"
-              download=''
-              className="download-btn seecv"
-            >
+            <a href={Resume} download='Resume'className="download-btn seecv">
               Download CV{" "}
               <FaFileDownload style={{ backgroundColor: "white", color: ' #82a448', padding: '1px' }} size={18} />{" "}
             </a>
@@ -298,7 +297,7 @@ const portfolio = () => {
       {/* project */}
 
       <div className="container-fluid mt-5 projeect" id='projecct' style={{ color: '#82a448' }}>
-        <h2 className="text-center">Projects</h2>
+        <h1 className="text-center">Projects</h1>
         <div className="row d-flex justify-content-around mt-5">
           <div className=" col col-12 col-md-6 col-lg-6  card" >
             <span className="image-box">
@@ -325,11 +324,11 @@ const portfolio = () => {
       {/* contact */}
 
       <div className="container-fluid mt-5 contactelements " id='contacct' style={{ color: "#82a448" }}>
-        <div className="row contactt d-flex justify-content-around">
+        <div className="row contactt d-flex justify-content-around justify-content-md-center">
 
           {/* Contact Form */}
           <div className="col-12 col-md-6 col-lg-4" >
-            <h2 style={{ color: '#82a448' }}>Get in Touch</h2>
+            <h1 style={{ color: '#82a448' }}>Get in Touch</h1>
             <form onSubmit={handleSubmit} className="contact-form">
 
               <input
@@ -381,7 +380,7 @@ const portfolio = () => {
 
           {/* Google Map Embed */}
           <div className="col-12 col-md-6 col-lg-4">
-            <h2 style={{ color: '#82a448' }} className='map-text'>I'm in here</h2>
+            <h1 style={{ color: '#82a448' }} className='map-text'>I'm in here</h1>
             <div className=" ratio ratio-4x3">
               <iframe className='map'
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3930.332227351772!2d78.11327307411116!3d9.906263274642527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTQnMjIuNSJOIDc4wrAwNic1Ny4xIkU!5e0!3m2!1sen!2sin!4v1746606955496!5m2!1sen!2sin"
@@ -396,7 +395,7 @@ const portfolio = () => {
 
           {/* Contact Information */}
           <div className="col-12 col-md-12 col-lg-4">
-            <h2 style={{ color: '#82a448' }}>Contact</h2>
+            <h1 style={{ color: '#82a448' }}>Contact</h1>
             <h5 className="contact-text mt-3">
               <MdOutlinePhoneIphone className="me-2 contact-icon" />
               +91 8939600125
